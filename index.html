@@ -5,28 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="個人開発で公開したプロダクトと技術記事を、課題・判断・使用技術・検証・成果でプロジェクト別に整理した開発ポートフォリオです。"
+      content="個人開発で設計から公開まで一人で手がけるソフトウェアエンジニア harness のポートフォリオ。実働プロダクト・技術スタック・技術記事を1ページにまとめています。"
     />
-    <title>開発ポートフォリオ | harness</title>
+    <title>harness | 開発ポートフォリオ</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
     <header class="hero">
-      <nav class="topbar" aria-label="外部リンク">
-        <a href="#projects">Projects</a>
-        <a href="#evidence">Evidence</a>
-        <a href="#talk-track">3-minute talk</a>
+      <nav class="topbar" aria-label="ページ内リンク">
+        <a href="#about">About</a>
+        <a href="#projects">Products</a>
+        <a href="#approach">How I work</a>
+        <a href="#writing">Writing</a>
       </nav>
 
       <section class="hero-grid" aria-labelledby="page-title">
         <div class="hero-copy">
-          <p class="eyebrow">Software development portfolio</p>
-          <h1 id="page-title">個人開発で公開した、動くプロダクトと技術記事の索引。</h1>
+          <p class="eyebrow">harness · Software engineer</p>
+          <h1 id="page-title">個人開発で、設計から公開まで一人でつくり切る。</h1>
           <p class="lead">
-            個人開発のプロダクトと技術記事を、課題・判断・使用技術・検証・成果の5つの観点で1画面に整理した公開用索引です。設計から公開まで一人で担当しています。
+            課題を見つけて動くプロダクトとして公開し、その過程を技術記事として言語化しています。ASP.NET Core・Electron・Chrome拡張など、用途に合わせて技術を選んで実装します。
           </p>
           <div class="hero-actions" aria-label="主要リンク">
-            <a class="button primary" href="https://github.com/harness17/DevNext">GitHub</a>
+            <a class="button primary" href="https://github.com/harness17">GitHub</a>
             <a class="button" href="https://zenn.dev/harness">Zenn</a>
             <a class="button" href="https://qiita.com/harnesswinner">Qiita</a>
             <a class="button" href="https://note.com/harness_">note</a>
@@ -35,234 +36,323 @@
 
         <div class="signal-board" aria-label="開発実績の要約">
           <div class="signal-card">
-            <span class="signal-value">5+</span>
-            <span class="signal-label">公開プロダクト</span>
-          </div>
-          <div class="signal-card">
-            <span class="signal-value">115+</span>
-            <span class="signal-label">YouTom GitHub DL</span>
+            <span class="signal-value">3</span>
+            <span class="signal-label">実働プロダクト</span>
           </div>
           <div class="signal-card">
             <span class="signal-value">13+</span>
             <span class="signal-label">公開技術記事</span>
           </div>
-          <div class="flow-strip" aria-hidden="true">
-            <span>課題</span>
-            <span>判断</span>
-            <span>技術</span>
-            <span>検証</span>
-            <span>成果</span>
+          <div class="signal-card">
+            <span class="signal-value">8+</span>
+            <span class="signal-label">公開リポジトリ</span>
           </div>
         </div>
       </section>
     </header>
 
     <main>
-      <section class="section intro" aria-labelledby="intro-title">
-        <div>
-          <p class="eyebrow">Positioning</p>
-          <h2 id="intro-title">採用担当者が3分で見るための索引</h2>
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="section-head">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">harness について</h2>
         </div>
-        <p>
-          ここでは氏名、連絡先、住所、健康情報、応募先情報は扱いません。公開してよい技術活動だけに絞り、各プロジェクトで使った技術と自分が担った判断を分けて示します。
+        <p class="lead">
+          個人開発を中心に、Webアプリ・デスクトップアプリ・ブラウザ拡張を設計から公開まで一人で手がけています。氏名・連絡先などの個人情報はこのページでは扱わず、公開してよい技術活動だけを載せています。
         </p>
+        <div class="strengths">
+          <div class="panel strength">
+            <h3>作って公開し切る</h3>
+            <p>
+              YouTomはv1.19.0まで継続リリースしGitHub累計115DL。Chrome拡張2本もWeb Storeで公開済み。試作で終わらせず、実際に使える形まで持っていきます。
+            </p>
+          </div>
+          <div class="panel strength">
+            <h3>書いて言語化する</h3>
+            <p>
+              Zenn / Qiita に13本の技術記事を公開。直面した課題と解決の判断を、あとから再現できる手順として残しています。
+            </p>
+          </div>
+          <div class="panel strength">
+            <h3>AIで開発効率を上げる</h3>
+            <p>
+              Claude CodeとCodexを連携させる開発ハーネスを自作。設計・守秘・公開可否は自分で判断し、実装やレビューを効率化しています。
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="section" id="projects" aria-labelledby="projects-title">
+      <section class="section skills" aria-labelledby="skills-title">
         <div class="section-head">
-          <p class="eyebrow">Project map</p>
-          <h2 id="projects-title">ベースにする3つの成果物</h2>
+          <p class="eyebrow">Tech stack</p>
+          <h2 id="skills-title">技術スタック</h2>
+        </div>
+        <div class="skill-groups">
+          <div class="panel skill-group">
+            <h3>言語</h3>
+            <ul class="tags">
+              <li>C#</li>
+              <li>TypeScript</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div class="panel skill-group">
+            <h3>バックエンド</h3>
+            <ul class="tags">
+              <li>ASP.NET Core</li>
+              <li>Identity</li>
+              <li>Entity Framework Core</li>
+              <li>MVC</li>
+            </ul>
+          </div>
+          <div class="panel skill-group">
+            <h3>フロント・デスクトップ</h3>
+            <ul class="tags">
+              <li>React</li>
+              <li>Electron</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+          <div class="panel skill-group">
+            <h3>API・連携</h3>
+            <ul class="tags">
+              <li>YouTube Data API v3</li>
+              <li>OAuth 2.0</li>
+            </ul>
+          </div>
+          <div class="panel skill-group">
+            <h3>拡張・基盤</h3>
+            <ul class="tags">
+              <li>Chrome Extensions (MV3)</li>
+              <li>Git</li>
+              <li>GitHub Actions</li>
+            </ul>
+          </div>
+          <div class="panel skill-group">
+            <h3>AI開発</h3>
+            <ul class="tags">
+              <li>Claude Code</li>
+              <li>Codex</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" id="projects" aria-labelledby="projects-title">
+        <div class="section-head">
+          <p class="eyebrow">Products</p>
+          <h2 id="projects-title">実働プロダクト</h2>
         </div>
 
         <div class="project-grid">
           <article class="project">
             <div class="project-header">
-              <p class="project-kicker">Desktop app / YouTube workflow</p>
+              <p class="project-kicker">Desktop app · Electron</p>
               <h3>YouTom</h3>
             </div>
             <dl class="evidence-list">
               <div>
                 <dt>課題</dt>
-                <dd>YouTubeの配信予定が時系列で見づらい。個人開発でどこまで実用的なデスクトップアプリを作り、継続的に公開・運用できるかを試したかった。</dd>
+                <dd>YouTubeの配信予定が時系列で見づらい。実用的なデスクトップアプリを個人で作り、継続運用できるか試したかった。</dd>
               </div>
               <div>
-                <dt>自分の判断</dt>
-                <dd>デスクトップアプリとして作り、YouTube Data APIのクォータ削減とAPI権限範囲の絞り込みを重視した。</dd>
+                <dt>役割</dt>
+                <dd>設計・実装・テスト・リリースまで一人で担当。</dd>
               </div>
               <div>
                 <dt>使用技術</dt>
-                <dd>Electron / React / Node.js / YouTube Data API v3 / GitHub Releases による配布。</dd>
-              </div>
-              <div>
-                <dt>検証方法</dt>
-                <dd>実動確認、クロスレビュー、GitHubリリースで確認した。</dd>
+                <dd>Electron / React / Node.js / YouTube Data API v3</dd>
               </div>
               <div>
                 <dt>成果</dt>
-                <dd>v1.19.0まで継続リリース。GitHub累計115DL。実使用可能な状態で公開済み。</dd>
+                <dd>v1.19.0まで継続リリース。GitHub累計115DL。実使用可能な状態で公開中。</dd>
               </div>
             </dl>
+            <div class="project-links">
+              <a href="https://github.com/harness17/youtube-schedule">GitHub</a>
+              <a href="https://zenn.dev/harness/articles/youtom-introduction">Zenn: 紹介</a>
+              <a href="https://zenn.dev/harness/articles/youtube-data-api-rss-quota-reduction">Zenn: クォータ削減</a>
+            </div>
           </article>
 
           <article class="project">
             <div class="project-header">
-              <p class="project-kicker">ASP.NET Core / portfolio base</p>
+              <p class="project-kicker">Chrome extension · MV3</p>
+              <h3>YouTube Playlist Date Sorter</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>YouTubeのプレイリストを投稿日順に並べ替えて見たい。APIキー不要で動かしたい。</dd>
+              </div>
+              <div>
+                <dt>役割</dt>
+                <dd>企画・実装・ストア公開まで一人で担当。</dd>
+              </div>
+              <div>
+                <dt>使用技術</dt>
+                <dd>Chrome Extensions (MV3) / JavaScript / DOM / MutationObserver</dd>
+              </div>
+              <div>
+                <dt>成果</dt>
+                <dd>Chrome Web Store 公開。投稿日順ソート＋連続再生をAPIキー不要で実現。</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a href="https://chromewebstore.google.com/detail/youtube-playlist-date-sor/hobigboofokgcnjfobilijbknbmemlbd">Chrome Web Store</a>
+              <a href="https://github.com/harness17/youtube-playlist-date-sorter">GitHub</a>
+              <a href="https://qiita.com/harnesswinner/items/fa3a124e5fa50229a887">Qiita: 実装解説</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">Chrome extension · MV3</p>
+              <h3>Amazon Wishlist Sale Picker</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>Amazonのほしい物リストから、セール対象の商品だけを抽出して見たい。</dd>
+              </div>
+              <div>
+                <dt>役割</dt>
+                <dd>企画・実装・ストア公開まで一人で担当。日英UIに対応。</dd>
+              </div>
+              <div>
+                <dt>使用技術</dt>
+                <dd>Chrome Extensions (MV3) / JavaScript / DOM</dd>
+              </div>
+              <div>
+                <dt>成果</dt>
+                <dd>Chrome Web Store 公開。日本語・英語の両UIに対応。</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a href="https://chromewebstore.google.com/detail/amazon-wishlist-sale-pick/hbjnpfdjifnmofkgadigphfamcnpgba">Chrome Web Store</a>
+              <a href="https://github.com/harness17/amazon-wishlist-sale-picker">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section foundation" id="foundation" aria-labelledby="foundation-title">
+        <div class="foundation-grid">
+          <div class="foundation-intro">
+            <p class="eyebrow">Foundation</p>
+            <h2 id="foundation-title">エンジニアリングの土台</h2>
+            <p>
+              プロダクトの裏側にある、Webアプリ開発のベースづくり。受託開発で扱う規模の構成を、現在の技術で再構築しています。
+            </p>
+          </div>
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">ASP.NET Core · Web base</p>
               <h3>DevNext</h3>
             </div>
             <dl class="evidence-list">
               <div>
-                <dt>課題</dt>
-                <dd>以前の職場での経験から、.NET Framework MVC の開発ベースを現在の環境で再構築する。</dd>
+                <dt>概要</dt>
+                <dd>以前の職場で扱った .NET Framework MVC の開発ベースを、ASP.NET Core で再構築するプロジェクト。</dd>
               </div>
               <div>
-                <dt>自分の判断</dt>
-                <dd>ASP.NET Coreを選び、Identity、共通ライブラリ、作成サンプルの選定、再実装の流れを整理した。</dd>
+                <dt>判断</dt>
+                <dd>ASP.NET Core を採用し、Identity・共通ライブラリ・サンプルの選定と再実装の流れを設計した。</dd>
               </div>
               <div>
                 <dt>使用技術</dt>
-                <dd>ASP.NET Core (.NET 10) / ASP.NET Core Identity / Entity Framework Core / MVC / 共通ライブラリ設計。</dd>
-              </div>
-              <div>
-                <dt>検証方法</dt>
-                <dd>ブラウザで実動確認し、画面として動くことを確認した。</dd>
+                <dd>ASP.NET Core (.NET 10) / Identity / Entity Framework Core / MVC</dd>
               </div>
               <div>
                 <dt>成果</dt>
-                <dd>Identity・共通ライブラリ・画面サンプルをASP.NET CoreでGitHub公開済み。</dd>
+                <dd>Identity・共通ライブラリ・画面サンプルを ASP.NET Core で GitHub 公開。</dd>
               </div>
             </dl>
-          </article>
-
-          <article class="project">
-            <div class="project-header">
-              <p class="project-kicker">Dev workflow / AI operations</p>
-              <h3>AIハーネス</h3>
+            <div class="project-links">
+              <a href="https://github.com/harness17/DevNext">GitHub</a>
+              <a href="https://zenn.dev/harness/articles/aspnet-core-identity-to-commonlibrary">Zenn: Identity共通化</a>
+              <a href="https://zenn.dev/harness/articles/devnext-mvc-helper-extensions">Zenn: Helper移植</a>
             </div>
-            <dl class="evidence-list">
-              <div>
-                <dt>課題</dt>
-                <dd>Claude CodeとCodexへ個別に指示すると、内容の食い違い、手作業の連携、作業範囲の曖昧さで手戻りが増えた。</dd>
-              </div>
-              <div>
-                <dt>自分の判断</dt>
-                <dd>連携手順をスキル化し、各エージェント間の引き継ぎテキストを残して、協調作業の前提を揃える形にした。</dd>
-              </div>
-              <div>
-                <dt>使用技術</dt>
-                <dd>Claude Code / Codex / PowerShell / Markdown 規約（rules・skill・handoff契約）。</dd>
-              </div>
-              <div>
-                <dt>検証方法</dt>
-                <dd>実プロジェクトへ導入し、GitHub READMEの導入実績とZenn記事で運用内容を外部から確認できる形にした。</dd>
-              </div>
-              <div>
-                <dt>成果</dt>
-                <dd>開発の効率化手順を、属人的な指示出しではなく、再利用できるハーネスとして公開できた。</dd>
-              </div>
-            </dl>
           </article>
         </div>
       </section>
 
-      <section class="section evidence" id="evidence" aria-labelledby="evidence-title">
+      <section class="section approach" id="approach" aria-labelledby="approach-title">
         <div class="section-head">
-          <p class="eyebrow">Public proof</p>
-          <h2 id="evidence-title">外部から確認できる証跡</h2>
+          <p class="eyebrow">How I work</p>
+          <h2 id="approach-title">開発の進め方</h2>
         </div>
-
-        <div class="proof-grid">
-          <article>
-            <h3>YouTom</h3>
-            <p>YouTube配信予定を扱うデスクトップアプリ、クォータ削減、配布導線の証跡。</p>
-            <div class="link-stack">
-              <a href="https://github.com/harness17/youtube-schedule">GitHub: youtube-schedule</a>
-              <a href="https://zenn.dev/harness/articles/youtom-introduction">Zenn: Youtomを作った</a>
-              <a href="https://zenn.dev/harness/articles/youtube-data-api-rss-quota-reduction">Zenn: YouTube Data APIのクォータをRSSで削減</a>
-              <a href="https://zenn.dev/harness/articles/electron-smartscreen-oss-distribution">Zenn: 未署名Electronアプリ配布とSmartScreen</a>
-              <a href="https://qiita.com/harnesswinner/items/52c94119fed2aba20f7e">Qiita: Youtomを作った</a>
-              <a href="https://qiita.com/harnesswinner/items/e2d5dba192540222d8d5">Qiita: クォータ枯渇をRSSで避ける設計</a>
-            </div>
-          </article>
-
-          <article>
-            <h3>DevNext</h3>
-            <p>旧.NET Framework MVC開発ベースをASP.NET Coreへ再構築する証跡。</p>
-            <div class="link-stack">
-              <a href="https://github.com/harness17/DevNext">GitHub: DevNext</a>
-              <a href="https://zenn.dev/harness/articles/devnext-mvc-helper-extensions">Zenn: ASP.NET MVCのHelperをASP.NET Coreに移植</a>
-              <a href="https://zenn.dev/harness/articles/aspnet-core-identity-to-commonlibrary">Zenn: Identityエンティティを共通化した判断</a>
-              <a href="https://zenn.dev/harness/articles/fullcalendar-event-color-rendering">Zenn: FullCalendarでDTOの色が反映されない時に見たこと</a>
-            </div>
-          </article>
-
-          <article>
-            <h3>Chrome拡張</h3>
-            <p>Chrome Web Storeで公開している拡張機能、ソースコード、DOM操作まわりの記事。</p>
-            <div class="link-stack">
-              <a href="https://chromewebstore.google.com/detail/youtube-playlist-date-sor/hobigboofokgcnjfobilijbknbmemlbd">Chrome Web Store: YouTube Playlist Date Sorter（9インストール）</a>
-              <a href="https://github.com/harness17/youtube-playlist-date-sorter">GitHub: youtube-playlist-date-sorter</a>
-              <a href="https://chromewebstore.google.com/detail/amazon-wishlist-sale-pick/hbjnpfdjifnmofkgadigphfamcnpgba">Chrome Web Store: Amazon Wishlist Sale Picker（61インストール）</a>
-              <a href="https://github.com/harness17/amazon-wishlist-sale-picker">GitHub: amazon-wishlist-sale-picker</a>
-              <a href="https://qiita.com/harnesswinner/items/3bac40961a0b5ff20dee">Qiita: YouTubeのSPA遷移後にcontent scriptが効かない問題</a>
-              <a href="https://qiita.com/harnesswinner/items/5429f56b3a8e23675703">Qiita: MutationObserver再発火への対処</a>
-              <a href="https://qiita.com/harnesswinner/items/fa3a124e5fa50229a887">Qiita: DOM順を保存して通常順に戻す実装</a>
-            </div>
-          </article>
-
-          <article>
-            <h3>AIハーネス</h3>
-            <p>Claude CodeとCodexの協調、handoff、review gate、skill化の証跡。</p>
-            <div class="link-stack">
-              <a href="https://github.com/harness17/cross-agent-harness">GitHub: cross-agent-harness</a>
-              <a href="https://zenn.dev/harness/articles/cross-agent-harness-introduction">Zenn: cross-agent-harnessに切り出した</a>
-              <a href="https://zenn.dev/harness/articles/cross-agent-harness-automation">Zenn: CodexとClaude Codeを相互呼び出しするハーネスを組んだ</a>
-              <a href="https://zenn.dev/harness/articles/ai-handoff-multi-layer-contract-checklist">Zenn: handoffを多層契約チェックリストにした</a>
-              <a href="https://zenn.dev/harness/articles/codex-claude-skill-graph-worklog">Zenn: 設計判断をMy-Skill-Graphに残す</a>
-              <a href="https://zenn.dev/harness/articles/ai-cross-review-handoff-workflow">Zenn: AI 2台クロスレビュー</a>
-              <a href="https://zenn.dev/harness/articles/claude-code-workflow-evolution">Zenn: rulesとskillsに分けた話</a>
-              <a href="https://qiita.com/harnesswinner/items/5bb47dec500eb36a8369">Qiita: handoff契約チェックリスト</a>
-              <a href="https://qiita.com/harnesswinner/items/98669d5afa40d36299d5">Qiita: Sprint Contract運用</a>
-              <a href="https://qiita.com/harnesswinner/items/e8ac450dbfd60757f487">Qiita: Surgical Changesルール</a>
-              <a href="https://qiita.com/harnesswinner/items/871470b50d10ccbbeac9">Qiita: git add個別ファイル指定</a>
-              <a href="https://qiita.com/harnesswinner/items/6678320489deec25113a">Qiita: CLAUDE.mdをrulesへ分割</a>
-            </div>
-          </article>
-
-          <article>
-            <h3>note</h3>
-            <p>技術記事とは別に、開発ログや公開物の補助的な発信先として利用しているページ。</p>
-            <div class="link-stack">
-              <a href="https://note.com/harness_">note: harness_</a>
-            </div>
-          </article>
+        <p class="lead">
+          AIを使って開発を効率化する一方で、設計・守秘・公開可否の判断は自分で行います。Claude CodeとCodexの連携を仕組み化し、品質を落とさず手戻りを減らしています。
+        </p>
+        <div class="approach-grid">
+          <div class="panel">
+            <h3>自分で決めること</h3>
+            <ul>
+              <li>アーキテクチャと設計判断</li>
+              <li>守秘・個人情報・公開可否の判断</li>
+              <li>完成条件と検証観点の定義</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>仕組み化していること</h3>
+            <ul>
+              <li>AI間のhandoffを多層契約（目的/範囲/権限/完成/検証/失敗）で定義</li>
+              <li>変更差分を絞るSurgical Changesルール</li>
+              <li>レビューゲートと、手順のskill化による再利用</li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>検証のしかた</h3>
+            <ul>
+              <li>dotnet test / npm test</li>
+              <li>Playwrightによる実動確認</li>
+              <li>Claude Code↔Codexのクロスレビュー</li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-links approach-links">
+          <a href="https://github.com/harness17/cross-agent-harness">GitHub: cross-agent-harness</a>
+          <a href="https://zenn.dev/harness/articles/ai-handoff-multi-layer-contract-checklist">Zenn: handoff多層契約</a>
+          <a href="https://qiita.com/harnesswinner/items/6678320489deec25113a">Qiita: CLAUDE.mdをrulesへ分割</a>
         </div>
       </section>
 
-      <section class="section talk-track" id="talk-track" aria-labelledby="talk-title">
-        <div class="talk-heading">
-          <p class="eyebrow">Interview talk track</p>
-          <h2 id="talk-title">面接での3分説明</h2>
-          <p class="talk-note">採用担当者・技術担当者それぞれに向けた参照用の説明です。</p>
+      <section class="section writing" id="writing" aria-labelledby="writing-title">
+        <div class="section-head">
+          <p class="eyebrow">Writing</p>
+          <h2 id="writing-title">技術記事</h2>
         </div>
-        <div class="talk-columns">
-          <div class="talk-column">
-            <h3>採用担当者の方へ</h3>
-            <ol>
-              <li>個人開発で動くプロダクトを公開しています。YouTomはデスクトップアプリとしてv1.19.0まで継続リリースし、GitHub累計115DLで実稼働中です。</li>
-              <li>ASP.NET Core、Electron/React、Chrome拡張など複数の技術スタックで、設計から公開まで一人で完遂しています。</li>
-              <li>Qiita/Zennに13本の技術記事を公開し、開発で直面した課題と解決過程を言語化しています。</li>
-              <li>このページの「課題・判断・使用技術・検証・成果」の5項目が、各プロジェクトで自分が担った役割と技術を示す軸です。</li>
-            </ol>
-          </div>
-          <div class="talk-column">
-            <h3>技術担当者の方へ</h3>
-            <ol>
-              <li>主な技術スタックはASP.NET Core（Identity・MVC）、Electron/React、YouTube Data API、Chrome Extensions（Manifest V3）です。</li>
-              <li>直近の設計判断例：YouTomのYouTube Data APIクォータ削減にRSSを採用、OAuth権限を読み取り専用に限定。Chrome拡張はMutationObserver再発火をバッジ差分更新で制御しています。</li>
-              <li>検証はdotnet test・npm test・Playwrightによる実動確認で行っています。</li>
-              <li>開発効率化として、Claude CodeとCodexを連携させるhandoff多層契約・Surgical Changesルールをスキルファイルに書き出して再利用しています。</li>
-            </ol>
-          </div>
+        <div class="writing-grid">
+          <a class="panel writing-card" href="https://zenn.dev/harness/articles/youtube-data-api-rss-quota-reduction">
+            <span class="source-tag">Zenn</span>
+            <span class="writing-title">YouTube Data APIのクォータをRSSで削減した</span>
+          </a>
+          <a class="panel writing-card" href="https://zenn.dev/harness/articles/electron-smartscreen-oss-distribution">
+            <span class="source-tag">Zenn</span>
+            <span class="writing-title">未署名Electronアプリの配布とSmartScreen</span>
+          </a>
+          <a class="panel writing-card" href="https://zenn.dev/harness/articles/aspnet-core-identity-to-commonlibrary">
+            <span class="source-tag">Zenn</span>
+            <span class="writing-title">Identityエンティティを共通化した判断</span>
+          </a>
+          <a class="panel writing-card" href="https://qiita.com/harnesswinner/items/5429f56b3a8e23675703">
+            <span class="source-tag">Qiita</span>
+            <span class="writing-title">MutationObserver再発火への対処</span>
+          </a>
+          <a class="panel writing-card" href="https://zenn.dev/harness/articles/ai-handoff-multi-layer-contract-checklist">
+            <span class="source-tag">Zenn</span>
+            <span class="writing-title">handoffを多層契約チェックリストにした</span>
+          </a>
+          <a class="panel writing-card" href="https://qiita.com/harnesswinner/items/6678320489deec25113a">
+            <span class="source-tag">Qiita</span>
+            <span class="writing-title">CLAUDE.mdをrulesへ分割した</span>
+          </a>
+        </div>
+        <div class="hero-actions writing-actions" aria-label="記事一覧リンク">
+          <a class="button" href="https://zenn.dev/harness">全記事: Zenn</a>
+          <a class="button" href="https://qiita.com/harnesswinner">全記事: Qiita</a>
+          <a class="button" href="https://note.com/harness_">note</a>
         </div>
       </section>
     </main>
