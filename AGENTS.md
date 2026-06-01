@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 This is a public software development portfolio repository.
 
