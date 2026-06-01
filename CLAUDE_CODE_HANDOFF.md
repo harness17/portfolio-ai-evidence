@@ -12,19 +12,23 @@ https://github.com/harness17/portfolio-ai-evidence
 
 ## Current Design Line
 
-This site is a public one-page development portfolio. It should show public technical evidence only.
+This site is a public one-page software development portfolio. It should show public technical evidence only.
 
-Positioning: lead with technical skills and shipped deliverables. AI-assisted workflow is one supporting element (the AIハーネス card + one talk-track item), not the main framing.
+Positioning: lead with technical skills and shipped deliverables. AI-assisted workflow is one section ("開発の進め方 / How I work"), not a product.
 
-Core cards, in this order:
+Section model, in order (rebuilt 2026-06-01 from the old "3 cards × 5 fields" layout):
 
-- YouTom
-- DevNext
-- AIハーネス
+1. Hero — handle, role, value line, links, three headline metrics (実働プロダクト 3 / 技術記事 13+ / 公開リポジトリ 8+).
+2. About / 強み — short self-intro + three strength panels.
+3. 技術スタック — skill groups as tag chips.
+4. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
+5. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
+6. 開発の進め方 — the AI harness (cross-agent-harness), handoff contracts, review gate, skill化. This is where AI usage lives.
+7. Writing — six curated articles + links to full Zenn/Qiita/note.
 
-Each card uses the five fields: 課題, 自分の判断, 使用技術, 検証方法, 成果. ("AI委譲範囲" was replaced by "使用技術" on 2026-06-01 to foreground technical stack.)
+Nav anchors: `#about`, `#projects`, `#approach`, `#writing` — keep in sync with section ids.
 
-Chrome extensions are listed as external proof, not as core cards. Both the Chrome Web Store link and the source repository (now split into independent repos) are linked.
+Chrome extensions are shipped products in 実働プロダクト. Their Chrome Web Store link and source repo are both linked. Install counts are intentionally omitted (they undersell). No product screenshots (they leak personal data: subscriptions, wishlist items).
 
 ## Privacy Boundary
 
@@ -36,12 +40,14 @@ Do not add unpublished DevNext-based app details until the user confirms they ar
 
 - Read `git status` before editing.
 - Keep changes scoped to `index.html`, `assets/styles.css`, `README.md`, or this handoff unless the user asks otherwise.
-- Preserve the three-card structure (order: YouTom, DevNext, AIハーネス) unless the user explicitly changes the positioning.
-- For each card, keep the same five fields: 課題, 自分の判断, 使用技術, 検証方法, 成果.
+- Follow the seven-section model in Current Design Line. Do not collapse it back into uniform 5-field cards.
+- Keep AI usage confined to the 開発の進め方 section; do not promote it to a product.
 - Treat Chrome Web Store links as external proof; source repositories may be linked alongside them.
+- Use the handle `harness` only; never add a real name or contact details.
 
 ## Current Status
 
+- 2026-06-01 (structural rebuild): Rebuilt the whole page from the old "3 cards × 5 fields + wall-of-links proof + HR/tech talk-track" into the seven-section model above. Added About/強み and 技術スタック (previously missing). Promoted the two Chrome extensions to 実働プロダクト alongside YouTom. Moved DevNext to エンジニアリングの土台 and the AI harness to 開発の進め方. Dissolved the talk-track section into About + 開発の進め方. Curated Writing down to six articles. `styles.css` extended (additive) with .panel/.strengths/.skill-groups/.tags/.project-links/.foundation-grid/.approach-grid/.writing-grid. Nav re-pointed to #about/#projects/#approach/#writing. Verified on desktop and 375px; all nav anchors resolve; no real name present.
 - 2026-06-01: Repositioned from "AI evidence map" to a job-hunting software development portfolio. Technical skills and shipped deliverables now lead; AI usage is demoted to one card and one talk-track item.
 - Hero copy, title, meta description, and signal-board rewritten (signal-board now: 公開プロダクト 5+ / YouTom 115 DL / 公開技術記事 13+).
 - Card order changed to YouTom → DevNext → AIハーネス. The "AI委譲範囲" field was replaced by "使用技術" in every card.

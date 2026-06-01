@@ -372,13 +372,164 @@ h3 {
   margin: 0;
 }
 
+/* --- Reusable card panel --- */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 22px 24px;
+  box-shadow: 0 14px 34px rgba(29, 40, 38, 0.07);
+}
+
+/* --- About / strengths --- */
+.strengths {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.strength h3 {
+  color: var(--accent-strong);
+  margin-bottom: 10px;
+}
+
+.strength p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* --- Tech stack --- */
+.skill-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.skill-group h3 {
+  color: var(--accent-strong);
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags li {
+  background: #f3f6f2;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent-strong);
+}
+
+/* --- Product card links --- */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 16px 18px;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+/* --- Foundation --- */
+.foundation-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.55fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.foundation-intro p:last-child {
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+/* --- How I work --- */
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.approach-grid h3 {
+  color: var(--accent-strong);
+  margin-bottom: 12px;
+}
+
+.approach-grid ul {
+  margin: 0;
+  padding-left: 1.2em;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.approach-grid li + li {
+  margin-top: 8px;
+}
+
+.approach-links {
+  border-top: 0;
+  padding-left: 0;
+  margin-top: 22px;
+}
+
+/* --- Writing --- */
+.writing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.writing-card {
+  display: grid;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.writing-card:hover {
+  border-color: var(--accent);
+}
+
+.source-tag {
+  justify-self: start;
+  background: var(--accent);
+  color: #ffffff;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 2px 10px;
+  border-radius: 999px;
+}
+
+.writing-title {
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.writing-actions {
+  margin-top: 22px;
+}
+
 @media (max-width: 940px) {
   .hero {
     min-height: auto;
   }
 
   .hero-grid,
-  .intro {
+  .intro,
+  .foundation-grid {
     grid-template-columns: 1fr;
   }
 
