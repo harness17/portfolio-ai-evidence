@@ -1,12 +1,13 @@
-# AI Evidence Map
+# Software Development Portfolio
 
-AI-assisted software development evidence map for interview and portfolio use.
+A public one-page software development portfolio for job-hunting and interview use. It leads with shipped products and technical stack; AI-assisted workflow is one supporting element.
 
 This repository contains only public portfolio assets:
 
 - `index.html`
 - `assets/styles.css`
 - `CLAUDE.md`
+- `AGENTS.md`
 - `CLAUDE_CODE_HANDOFF.md`
 
 Private job-search documents, application tracking, email analysis, health details, and contact details are intentionally excluded.
