@@ -16,17 +16,18 @@ This site is a public one-page software development portfolio. It should show pu
 
 Positioning: lead with technical skills and shipped deliverables. AI-assisted workflow is one section ("開発の進め方 / How I work"), not a product.
 
-Section model, in order (rebuilt 2026-06-01 from the old "3 cards × 5 fields" layout):
+Section model, in order (rebuilt 2026-06-01, experience added 2026-06-03):
 
 1. Hero — handle, role, value line, links, three headline metrics (実働プロダクト 3 / 技術記事 13+ / 公開リポジトリ 8+).
 2. About / 強み — short self-intro + three strength panels.
-3. 技術スタック — two provenance blocks: 実業務で使用 (前職での経験: C#/ASP.NET MVC/SQL/JavaScript/jQuery/HTML・CSS/SVN) and 個人開発で習得 (ASP.NET Core/Identity/EF Core/React/Electron/YouTube Data API/OAuth/Chrome Extensions/Git/GitHub Actions/Claude Code/Codex), as tag chips. Note: version control split — SVN was the work tool, Git is personal-dev. Do not merge back into one block — the split shows professional depth vs. self-driven learning.
-4. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
-5. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
-6. 開発の進め方 — the AI harness (cross-agent-harness), handoff contracts, review gate, skill化. This is where AI usage lives.
-7. Writing — six curated articles + links to full Zenn/Qiita/note.
+3. 業務経験 — professional background from 5+ years of web 受託開発. Three panels: 案件領域 (project domains with years), 開発フェーズ (full development lifecycle), 環境・ミドルウェア (Windows/SQL Server/IIS/サイボウズ). Lead text mentions 官公庁・サービス業界 customers and leader experience.
+4. 技術スタック — two provenance blocks: 実業務で使用 (前職での経験: C#/ASP.NET MVC/ASP Classic/SQL/JavaScript/jQuery/HTML・CSS/SVN) and 個人開発で習得 (ASP.NET Core/Identity/EF Core/React/Electron/YouTube Data API/OAuth/Chrome Extensions/Git/GitHub Actions/Claude Code/Codex), as tag chips. Note: version control split — SVN was the work tool, Git is personal-dev. Do not merge back into one block — the split shows professional depth vs. self-driven learning.
+5. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
+6. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
+7. 開発の進め方 — the AI harness (cross-agent-harness), handoff contracts, review gate, skill化. This is where AI usage lives.
+8. Writing — six curated articles + links to full Zenn/Qiita/note.
 
-Nav anchors: `#about`, `#projects`, `#approach`, `#writing` — keep in sync with section ids.
+Nav anchors: `#about`, `#experience`, `#projects`, `#approach`, `#writing` — keep in sync with section ids.
 
 Chrome extensions are shipped products in 実働プロダクト. Their Chrome Web Store link and source repo are both linked. Install counts are intentionally omitted (they undersell). No product screenshots (they leak personal data: subscriptions, wishlist items).
 
@@ -47,6 +48,7 @@ Do not add unpublished DevNext-based app details until the user confirms they ar
 
 ## Current Status
 
+- 2026-06-03: Added 業務経験 section (between About and Tech Stack) with Doda-sourced professional data: 案件領域 (7 items), 開発フェーズ (7 items), 環境・ミドルウェア (4 items), each with year indicators. Added ASP Classic to 実業務 tech tags. Nav updated with #experience. Section model now 8 sections.
 - 2026-06-01 (structural rebuild): Rebuilt the whole page from the old "3 cards × 5 fields + wall-of-links proof + HR/tech talk-track" into the seven-section model above. Added About/強み and 技術スタック (previously missing). Promoted the two Chrome extensions to 実働プロダクト alongside YouTom. Moved DevNext to エンジニアリングの土台 and the AI harness to 開発の進め方. Dissolved the talk-track section into About + 開発の進め方. Curated Writing down to six articles. `styles.css` extended (additive) with .panel/.strengths/.skill-groups/.tags/.project-links/.foundation-grid/.approach-grid/.writing-grid. Nav re-pointed to #about/#projects/#approach/#writing. Verified on desktop and 375px; all nav anchors resolve; no real name present.
 - 2026-06-01: Repositioned from "AI evidence map" to a job-hunting software development portfolio. Technical skills and shipped deliverables now lead; AI usage is demoted to one card and one talk-track item.
 - Hero copy, title, meta description, and signal-board rewritten (signal-board now: 公開プロダクト 5+ / YouTom 115 DL / 公開技術記事 13+).
