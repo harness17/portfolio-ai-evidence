@@ -20,7 +20,7 @@ Section model, in order (rebuilt 2026-06-01 from the old "3 cards × 5 fields" l
 
 1. Hero — handle, role, value line, links, three headline metrics (実働プロダクト 3 / 技術記事 13+ / 公開リポジトリ 8+).
 2. About / 強み — short self-intro + three strength panels.
-3. 技術スタック — skill groups as tag chips.
+3. 技術スタック — two provenance blocks: 実業務で使用 (前職での経験: C#/ASP.NET MVC/SQL/JavaScript/jQuery/HTML・CSS/SVN) and 個人開発で習得 (ASP.NET Core/Identity/EF Core/React/Electron/YouTube Data API/OAuth/Chrome Extensions/Git/GitHub Actions/Claude Code/Codex), as tag chips. Note: version control split — SVN was the work tool, Git is personal-dev. Do not merge back into one block — the split shows professional depth vs. self-driven learning.
 4. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
 5. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
 6. 開発の進め方 — the AI harness (cross-agent-harness), handoff contracts, review gate, skill化. This is where AI usage lives.
