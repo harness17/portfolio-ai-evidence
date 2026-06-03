@@ -20,7 +20,7 @@ Section model, in order (rebuilt 2026-06-01, experience added 2026-06-03):
 
 1. Hero — handle, role, value line, links, three headline metrics (実働プロダクト 3 / 技術記事 13+ / 公開リポジトリ 8+).
 2. About / 強み — short self-intro + three strength panels.
-3. 業務経験 — professional background from 5+ years of web 受託開発. Three panels: 案件領域 (project domains with years), 開発フェーズ (full development lifecycle), 環境・ミドルウェア (Windows/SQL Server/IIS/サイボウズ). Lead text mentions 官公庁・サービス業界 customers and leader experience.
+3. 業務経験 — professional background from ~9 years of web 受託開発. Three panels aligned with the resume: 業種知識 (コーポレートサイト/旅行予約/コンベンション/EC/官公庁), 経験フェーズ (要件定義〜運用改善), 環境・ミドルウェア (Windows Server/SQL Server/IIS/サイボウズ/Redmine). Lead mentions PL leader experience (max 4 members). Items and labels must match the resume (職務経歴書).
 4. 技術スタック — two provenance blocks: 実業務で使用 (前職での経験: C#/ASP.NET MVC/ASP Classic/SQL/JavaScript/jQuery/HTML・CSS/SVN) and 個人開発で習得 (ASP.NET Core/Identity/EF Core/React/Electron/YouTube Data API/OAuth/Chrome Extensions/Git/GitHub Actions/Claude Code/Codex), as tag chips. Note: version control split — SVN was the work tool, Git is personal-dev. Do not merge back into one block — the split shows professional depth vs. self-driven learning.
 5. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
 6. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
