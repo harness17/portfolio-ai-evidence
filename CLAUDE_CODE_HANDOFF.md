@@ -18,11 +18,11 @@ Positioning: lead with technical skills and shipped deliverables. AI-assisted wo
 
 Section model, in order (rebuilt 2026-06-01, experience added 2026-06-03):
 
-1. Hero — handle, role, value line, links, three headline metrics (実働プロダクト 4 / 技術記事 13+ / 公開リポジトリ 8+).
+1. Hero — handle, role, value line, links, three headline metrics (実働プロダクト 5 / 技術記事 40+ / 公開リポジトリ 9+).
 2. About / 強み — short self-intro + three strength panels.
 3. 業務経験 — professional background from ~9 years of web 受託開発. Three panels aligned with the resume: 業種知識 (コーポレートサイト/旅行予約/コンベンション/EC/官公庁), 経験フェーズ (要件定義〜運用改善), 環境・ミドルウェア (Windows Server/SQL Server/IIS/サイボウズ/Redmine). Lead mentions PL leader experience (max 4 members). Items and labels must match the resume (職務経歴書).
 4. 技術スタック — two provenance blocks: 実業務で使用 (前職での経験: C#/ASP.NET MVC/ASP Classic/SQL/JavaScript/jQuery/HTML・CSS/SVN) and 個人開発で習得 (ASP.NET Core/Identity/EF Core/React/Electron/YouTube Data API/OAuth/Chrome Extensions/Git/GitHub Actions/Claude Code/Codex), as tag chips. Note: version control split — SVN was the work tool, Git is personal-dev. Do not merge back into one block — the split shows professional depth vs. self-driven learning.
-5. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker, Kindle Series Sale Tracker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
+5. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker, Kindle Series Sale Tracker, Phycock. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
 6. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
 7. 開発の進め方 — the AI harness (cross-agent-harness), handoff contracts, review gate, skill化. This is where AI usage lives.
 8. Writing — six curated articles + links to full Zenn/Qiita/note.
@@ -48,6 +48,7 @@ Do not add unpublished DevNext-based app details until the user confirms they ar
 
 ## Current Status
 
+- 2026-06-05: Added Phycock (ASP.NET Core 10 MVC 体調管理 Web app) to 実働プロダクト. Updated YouTom to v1.23.0 (was v1.19.0). Updated article count to 40+ (Zenn 18 + Qiita 22, was 13+). Updated repo count to 9+. Updated signal board: 実働プロダクト 5 / 公開技術記事 40+ / 公開リポジトリ 9+. Updated DevNext 成果 to mention Phycock. Phycock card: 課題/役割/使用技術/成果 + GitHub + Zenn PDF article link.
 - 2026-06-03: Added 業務経験 section (between About and Tech Stack) with Doda-sourced professional data: 案件領域 (7 items), 開発フェーズ (7 items), 環境・ミドルウェア (4 items), each with year indicators. Added ASP Classic to 実業務 tech tags. Nav updated with #experience. Section model now 8 sections.
 - 2026-06-01 (structural rebuild): Rebuilt the whole page from the old "3 cards × 5 fields + wall-of-links proof + HR/tech talk-track" into the seven-section model above. Added About/強み and 技術スタック (previously missing). Promoted the two Chrome extensions to 実働プロダクト alongside YouTom. Moved DevNext to エンジニアリングの土台 and the AI harness to 開発の進め方. Dissolved the talk-track section into About + 開発の進め方. Curated Writing down to six articles. `styles.css` extended (additive) with .panel/.strengths/.skill-groups/.tags/.project-links/.foundation-grid/.approach-grid/.writing-grid. Nav re-pointed to #about/#projects/#approach/#writing. Verified on desktop and 375px; all nav anchors resolve; no real name present.
 - 2026-06-01: Repositioned from "AI evidence map" to a job-hunting software development portfolio. Technical skills and shipped deliverables now lead; AI usage is demoted to one card and one talk-track item.
@@ -59,5 +60,5 @@ Do not add unpublished DevNext-based app details until the user confirms they ar
 
 ## Next Actions
 
-- When the unpublished DevNext-based app can be public, revise DevNext to explain that the app was built using DevNext.
 - Keep the public page concise enough to scan in about three minutes.
+- Phycock privacy rule: never mention health context, Ritalico, 就労移行支援, or 訓練. Generic "体調管理" description only.
