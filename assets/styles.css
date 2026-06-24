@@ -512,6 +512,19 @@ h3 {
   margin-top: 28px;
 }
 
+.approach-visual {
+  margin: 28px 0 0;
+}
+
+.approach-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(29, 40, 38, 0.08);
+}
+
 .approach-grid h3 {
   color: var(--accent-strong);
   margin-bottom: 12px;
