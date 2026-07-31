@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="個人開発で設計から公開まで一人で手がけるソフトウェアエンジニア harness のポートフォリオ。実働プロダクト・技術スタック・技術記事を1ページにまとめています。"
+      content="C#／ASP.NET で業務系Webアプリ開発9年。要件定義からDB設計・実装・テストまで一貫して担当。現在は ASP.NET Core・Electron・Chrome拡張で個人プロダクトを設計から公開まで手がけています。"
     />
-    <title>harness | 開発ポートフォリオ</title>
-    <link rel="stylesheet" href="assets/styles.css?v=20260624" />
+    <title>harness | C#・ASP.NET Core エンジニア ポートフォリオ</title>
+    <link rel="stylesheet" href="assets/styles.css?v=20260731" />
   </head>
   <body>
     <header class="hero">
@@ -17,18 +17,20 @@
         <a href="#experience">Experience</a>
         <a href="#projects">Products</a>
         <a href="#approach">How I work</a>
+        <a href="#interests">Next</a>
         <a href="#writing">Writing</a>
       </nav>
 
       <section class="hero-grid" aria-labelledby="page-title">
         <div class="hero-copy">
           <p class="eyebrow">harness · Software engineer</p>
-          <h1 id="page-title">個人開発で、設計から公開まで一人でつくり切る。</h1>
+          <h1 id="page-title">業務系Webアプリを9年。要件定義から運用まで一貫して担当。</h1>
           <p class="lead">
-            課題を見つけて動くプロダクトとして公開し、その過程を技術記事として言語化しています。ASP.NET Core・Electron・Chrome拡張など、用途に合わせて技術を選んで実装します。
+            前職ではC#／ASP.NET MVCで業務系Webシステムを開発し、DB設計から実装・テストまで担当。プログラマリーダーとして最大4名のチームも見ていました。現在は ASP.NET Core・Electron・Chrome拡張で自分のプロダクトを公開まで運び、その判断を技術記事として残しています。
           </p>
           <div class="hero-actions" aria-label="主要リンク">
             <a class="button primary" href="https://github.com/harness17">GitHub</a>
+            <a class="button" href="https://lapras.com/public/EZNHGGE">LAPRAS</a>
             <a class="button" href="https://zenn.dev/harness">Zenn</a>
             <a class="button" href="https://qiita.com/harnesswinner">Qiita</a>
             <a class="button" href="https://note.com/harness_">note</a>
@@ -37,16 +39,16 @@
 
         <div class="signal-board" aria-label="開発実績の要約">
           <div class="signal-card">
+            <span class="signal-value">9年</span>
+            <span class="signal-label">業務開発経験</span>
+          </div>
+          <div class="signal-card">
             <span class="signal-value">6</span>
-            <span class="signal-label">実働プロダクト</span>
+            <span class="signal-label">公開プロダクト</span>
           </div>
           <div class="signal-card">
             <span class="signal-value">70+</span>
-            <span class="signal-label">公開技術記事</span>
-          </div>
-          <div class="signal-card">
-            <span class="signal-value">13</span>
-            <span class="signal-label">公開リポジトリ</span>
+            <span class="signal-label">技術記事</span>
           </div>
         </div>
       </section>
@@ -56,10 +58,10 @@
       <section class="section about" id="about" aria-labelledby="about-title">
         <div class="section-head">
           <p class="eyebrow">About</p>
-          <h2 id="about-title">harness について</h2>
+          <h2 id="about-title">強み</h2>
         </div>
         <p class="lead">
-          個人開発を中心に、Webアプリ・デスクトップアプリ・ブラウザ拡張を設計から公開まで一人で手がけています。氏名・連絡先などの個人情報はこのページでは扱わず、公開してよい技術活動だけを載せています。
+          業務系Webアプリの開発で身につけた設計・実装の進め方を土台に、個人開発ではWebアプリ・デスクトップアプリ・ブラウザ拡張を設計から公開まで一人で手がけています。
         </p>
         <div class="strengths">
           <div class="panel strength">
@@ -86,7 +88,7 @@
       <section class="section experience" id="experience" aria-labelledby="experience-title">
         <div class="section-head">
           <p class="eyebrow">Experience</p>
-          <h2 id="experience-title">業務経験</h2>
+          <h2 id="experience-title">業務経験（約9年）</h2>
         </div>
         <p class="lead">
           ITコンサルティング企業にてWebアプリケーション開発に約9年間従事。C#／ASP.NET MVCを用いた業務系Webシステムの開発を、要件定義からDB設計・実装・テストまで一貫して担当。プログラマリーダーとして最大4名のチームマネジメントも経験しています。
@@ -123,6 +125,93 @@
               <li><span class="exp-name">Redmine</span><span class="exp-years">2年未満</span></li>
             </ul>
           </div>
+        </div>
+
+        <h3 class="episode-heading">担当した課題と、そのときの判断</h3>
+        <div class="episode-grid">
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">パフォーマンス改善</p>
+              <h3>表示処理の遅延を、データアクセス設計の見直しで解消</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>複数のデータを連結して表示する画面で、DBアクセスがレコード単位に個別発行されており、表示までに大きな遅延が発生していた。</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>表示時の逐次取得をやめ、必要な関連データを先にまとめて取得してからメモリ上で突き合わせる方式へ変更。一括取得できるものは可能な限り結合し、アクセス回数そのものを削減した。</dd>
+              </div>
+              <div>
+                <dt>結果</dt>
+                <dd>画面表示の遅延を解消。以降は同種の画面でも先行取得を前提とした実装方針を取るようにした。</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">開発標準の策定 · リーダー</p>
+              <h3>社内の開発標準を策定し、実装方針をサンプルとして展開</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>実装方針が担当者ごとに揺れると、レビューと保守のコストが上がる。</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>設計方針を主体となって策定し、基本的な実装方針を組み込んだサンプルページを自ら作成して開発標準として展開した。</dd>
+              </div>
+              <div>
+                <dt>結果</dt>
+                <dd>社内の開発標準として運用。この取り組みを現在の技術で作り直しているのが <a href="#foundation">DevNext</a>。</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">要件定義 · 顧客折衝</p>
+              <h3>実現困難な要求を、代案提示で合意可能な仕様に落とす</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>利用者が使う検索画面の挙動について、顧客の要求をそのまま実装すると動作として無理が出る内容だった。</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>要求の意図を汲んだうえで、開発上・操作上とも不自然にならない挙動を代案として提示した。</dd>
+              </div>
+              <div>
+                <dt>結果</dt>
+                <dd>顧客と合意して仕様を確定。営業・SEが持ち帰った情報をもとに、要求整理・要件定義から実装設計までを担当した。</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">品質 · 運用改善</p>
+              <h3>入力ミス起因の確認作業を、バリデーションと事前検証で削減</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>旅行予約システムでプラン変更や細かな設定確認が繰り返し発生し、入力ミスに起因する確認作業が残っていた。</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>入力段階のバリデーションを追加し、あわせて異常系が発生しないためのデータ検証を後から組み込んだ。</dd>
+              </div>
+              <div>
+                <dt>結果</dt>
+                <dd>入力ミスの発生と、それに伴う確認・対応の手間を削減した。</dd>
+              </div>
+            </dl>
+          </article>
         </div>
       </section>
 
@@ -177,6 +266,73 @@
         <div class="project-grid">
           <article class="project">
             <div class="project-header">
+              <p class="project-kicker">Web app · ASP.NET Core</p>
+              <h3>Phycock</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>日々の体調変化を記録・可視化する個人用Webアプリが欲しかった。</dd>
+              </div>
+              <div>
+                <dt>役割</dt>
+                <dd>設計・実装・テストまで一人で担当。</dd>
+              </div>
+              <div>
+                <dt>使用技術</dt>
+                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / Chart.js / Playwright</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>Azure環境ではChromium配置に制約があるため、PDF出力をブラウザ印刷経路へ分岐させ、環境ごとに出力手段を切り替える構成にした。</dd>
+              </div>
+              <div>
+                <dt>成果</dt>
+                <dd>GitHub公開。日次体調記録・グラフ可視化・PDFエクスポートに対応。</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a href="https://phycock-e8a6gwh3h3h8hgh7.japanwest-01.azurewebsites.net/">Azureサイト</a>
+              <a href="https://github.com/harness17/phycock">ログイン情報などはGitHub参照</a>
+              <a href="https://zenn.dev/harness/articles/phycock-playwright-pdf-export">Zenn: PDF出力</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">Web app · ASP.NET Core</p>
+              <h3>Kototsubo</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>蔵書や購入メディアを一元管理し、そこから集めた言葉を体系的に記録したい。</dd>
+              </div>
+              <div>
+                <dt>役割</dt>
+                <dd>設計・実装・テスト・運用まで一人で担当。</dd>
+              </div>
+              <div>
+                <dt>使用技術</dt>
+                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / 国立国会図書館API / openBD / 楽天ブックスAPI</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>書誌データは典拠性を優先して国立国会図書館を主に置き、openBD・楽天は補完に回す構成にした。同一ISBNで書誌が割れる場合は利用者が候補から選べるようにした。</dd>
+              </div>
+              <div>
+                <dt>成果</dt>
+                <dd>GitHub公開。ISBN単体・一括登録、NDL書誌候補選択、Kindleインポート、言葉収集に対応。</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a href="https://kototsubo-gfbvfcg3efhyfucx.japanwest-01.azurewebsites.net/">Azureサイト</a>
+              <a href="https://github.com/harness17/kototsubo">ログイン情報などはGitHub参照</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
               <p class="project-kicker">Desktop app · Electron</p>
               <h3>YouTom</h3>
             </div>
@@ -192,6 +348,10 @@
               <div>
                 <dt>使用技術</dt>
                 <dd>Electron / React / Node.js / YouTube Data API v3</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>1日1万ユニットのAPIクォータ制約に対し、更新頻度の高い取得をRSS併用へ切り替えて消費を削減。自動更新と手動更新で取得内容と頻度を分離した。</dd>
               </div>
               <div>
                 <dt>成果</dt>
@@ -222,6 +382,10 @@
               <div>
                 <dt>使用技術</dt>
                 <dd>Chrome Extensions (MV3) / JavaScript / DOM / MutationObserver</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>利用者にAPIキーを用意させない方針を要件に置き、DOM操作とMutationObserverだけで完結させた。</dd>
               </div>
               <div>
                 <dt>成果</dt>
@@ -285,6 +449,10 @@
                 <dd>Chrome Extensions (MV3) / JavaScript / Amazon DOM解析 / LocalStorage</dd>
               </div>
               <div>
+                <dt>判断</dt>
+                <dd>判別不能を「既存値の保持」と「連続失敗」に分け、一時的な取得失敗で確定済みの情報を失わない設計にした。</dd>
+              </div>
+              <div>
                 <dt>成果</dt>
                 <dd>Chrome Web Store 公開。蔵書スキャンから続刊候補の検出・価格表示・CSV/JSONエクスポートまで対応。</dd>
               </div>
@@ -296,64 +464,6 @@
             </div>
           </article>
 
-          <article class="project">
-            <div class="project-header">
-              <p class="project-kicker">Web app · ASP.NET Core</p>
-              <h3>Phycock</h3>
-            </div>
-            <dl class="evidence-list">
-              <div>
-                <dt>課題</dt>
-                <dd>日々の体調変化を記録・可視化する個人用Webアプリが欲しかった。</dd>
-              </div>
-              <div>
-                <dt>役割</dt>
-                <dd>設計・実装・テストまで一人で担当。</dd>
-              </div>
-              <div>
-                <dt>使用技術</dt>
-                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / Chart.js / Playwright</dd>
-              </div>
-              <div>
-                <dt>成果</dt>
-                <dd>GitHub公開。日次体調記録・グラフ可視化・PDFエクスポートに対応。</dd>
-              </div>
-            </dl>
-            <div class="project-links">
-              <a href="https://phycock-e8a6gwh3h3h8hgh7.japanwest-01.azurewebsites.net/">Azureサイト</a>
-              <a href="https://github.com/harness17/phycock">ログイン情報などはGitHub参照</a>
-              <a href="https://zenn.dev/harness/articles/phycock-playwright-pdf-export">Zenn: PDF出力</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-header">
-              <p class="project-kicker">Web app · ASP.NET Core</p>
-              <h3>Kototsubo</h3>
-            </div>
-            <dl class="evidence-list">
-              <div>
-                <dt>課題</dt>
-                <dd>蔵書や購入メディアを一元管理し、そこから集めた言葉を体系的に記録したい。</dd>
-              </div>
-              <div>
-                <dt>役割</dt>
-                <dd>設計・実装・テスト・運用まで一人で担当。</dd>
-              </div>
-              <div>
-                <dt>使用技術</dt>
-                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / 国立国会図書館API / openBD / 楽天ブックスAPI</dd>
-              </div>
-              <div>
-                <dt>成果</dt>
-                <dd>GitHub公開。ISBN単体・一括登録、NDL書誌候補選択、Kindleインポート、言葉収集に対応。</dd>
-              </div>
-            </dl>
-            <div class="project-links">
-              <a href="https://kototsubo-gfbvfcg3efhyfucx.japanwest-01.azurewebsites.net/">Azureサイト</a>
-              <a href="https://github.com/harness17/kototsubo">ログイン情報などはGitHub参照</a>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -361,7 +471,7 @@
         <div class="foundation-grid">
           <div class="foundation-intro">
             <p class="eyebrow">Foundation</p>
-            <h2 id="foundation-title">エンジニアリングの土台</h2>
+            <h2 id="foundation-title">開発ベースの再構築</h2>
             <p>
               プロダクトの裏側にある、Webアプリ開発のベースづくり。受託開発で扱う規模の構成を、現在の技術で再構築しています。
             </p>
@@ -448,6 +558,27 @@
         </div>
       </section>
 
+      <section class="section interests" id="interests" aria-labelledby="interests-title">
+        <div class="section-head">
+          <p class="eyebrow">Next</p>
+          <h2 id="interests-title">これから取り組みたいこと</h2>
+        </div>
+        <div class="approach-grid">
+          <div class="panel">
+            <h3>AIを組み込んだ開発プロセスの整備</h3>
+            <p>
+              個人開発で作ったAIハーネスを、チーム開発で成立する形に広げたいと考えています。設計判断・レビューゲート・検証手順を仕組みとして共有し、品質を落とさず開発速度を上げる進め方をチームに持ち込みたいです。
+            </p>
+          </div>
+          <div class="panel">
+            <h3>本質的に役に立つ業務改善プロダクトの開発</h3>
+            <p>
+              前職では繰り返し発生する確認作業やミスの原因を、バリデーションやデータ検証で減らしてきました。作って終わりではなく、実際に使う人の手間が減ったかどうかまで見届けられる業務プロダクトの開発に関わりたいです。
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section class="section writing" id="writing" aria-labelledby="writing-title">
         <div class="section-head">
           <p class="eyebrow">Writing</p>
@@ -488,8 +619,8 @@
     </main>
 
     <footer class="footer">
-      <p>Last updated: 2026-06-24</p>
-      <p>Public portfolio page. Private job-search documents are intentionally excluded.</p>
+      <p>Last updated: 2026-07-31</p>
+      <p>公開可能な技術活動のみを掲載しています。氏名・連絡先などの個人情報はこのページでは扱いません。</p>
     </footer>
   </body>
 </html>
