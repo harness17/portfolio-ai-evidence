@@ -50,6 +50,7 @@ Do not add unpublished DevNext-based app details until the user confirms they ar
 
 ## Current Status
 
+- 2026-11-13: Zenn記事「ASP.NET Core移行でIdentityエンティティを共通化した判断」を非公開化したため、DevNextのプロジェクトリンクから外し、Writingカードを「自作HelperをASP.NET Coreに移植した」(devnext-mvc-helper-extensions) に差し替えた。旧テンプレートDevNetは削除済みで、ページでは名前もリンクも出さない。
 - 2026-07-28: PhycockをAzureサンプルサイトとして公開。Kototsuboと同じく、プロダクトカードに「Azureサイト」と「ログイン情報などはGitHub参照」を追加した。資格情報はポートフォリオへ重複掲載せず、公開リポジトリのREADMEを正本とする。
 - 2026-06-24: Updated metrics: YouTom v1.23.0→v1.24.1, DL 52→300超, 記事 40+→70+ (Zenn 31 + Qiita 41), リポジトリ 9+→13, プロダクト 5→6. Added Kototsubo (蔵書管理・言葉収集 Web app) as 6th product. Updated DevNext成果 to mention Kototsubo. Updated About panels (DL count, extension count 2→3, article count).
 - 2026-06-05: Added Phycock (ASP.NET Core 10 MVC 体調管理 Web app) to 実働プロダクト. Updated YouTom to v1.23.0 (was v1.19.0). Updated article count to 40+ (Zenn 18 + Qiita 22, was 13+). Updated repo count to 9+. Updated signal board: 実働プロダクト 5 / 公開技術記事 40+ / 公開リポジトリ 9+. Updated DevNext 成果 to mention Phycock. Phycock card: 課題/役割/使用技術/成果 + GitHub + Zenn PDF article link.
