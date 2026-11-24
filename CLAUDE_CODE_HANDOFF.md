@@ -16,18 +16,19 @@ This site is a public one-page software development portfolio. It should show pu
 
 Positioning: lead with technical skills and shipped deliverables. AI-assisted workflow is one section ("開発の進め方 / How I work"), not a product.
 
-Section model, in order (rebuilt 2026-06-01, experience added 2026-06-03):
+Section model, in order (rebuilt 2026-06-01, experience added 2026-06-03, synced with the page 2026-11-24). `CLAUDE.md` holds the short version; keep both in sync:
 
 1. Hero — handle, role, value line, links, three headline metrics (業務開発経験 9年 / 公開プロダクト 6 / Zenn技術記事 38). Never sum Zenn and Qiita counts.
 2. About / 強み — short self-intro + three strength panels.
-3. 業務経験 — professional background from ~9 years of web 受託開発. Three panels aligned with the resume: 業種知識 (公営競技サイト（自治体施行）/旅行予約/コンベンション/コーポレート・社内システム), 経験フェーズ (要件定義〜運用改善), 環境・ミドルウェア (Windows Server/SQL Server/IIS/サイボウズ/Redmine). Lead mentions PL leader experience (max 4 members). Items and labels must match the resume (職務経歴書). 業種知識 was corrected 2026-08-21: the year figures originally came from a doda skill sheet, not the resume — the resume lists the industries without years. Each remaining row must trace to a resume project (公営競技=トランスワード期のボートレース場サイト 4年5ヶ月, 旅行予約=2017/9-2019/9, コンベンション=2019/10-2021/3). 「官公庁」was renamed because the actual work is 公営競技場のサイト・管理画面 and the old label implied 中央省庁/自治体基幹系. ECサイト was dropped — no project in the resume backs it. コーポレート uses 「複数案件」 instead of a year figure because the resume only says 「複数担当（各案件2〜3ヶ月サイクル）」. 経験フェーズ and 環境 were corrected the same day, same reason: the resume carries a year figure for exactly one row (SQL Server 5年以上) and the rest were doda values. 経験フェーズ is now the sum of the resume's per-project 担当フェーズ (要件定義/基本設計 3年9ヶ月 = 旅行予約2年 + 演題1年半 + 下関3ヶ月; 詳細設計 3年6ヶ月 = 下関 lists no 詳細設計; 実装/テスト 約9年 = both tenures; 運用改善 4年 = トランスワード期の改修案件). 環境: Windows Server/SQL Server/IIS 約9年 (both tenures' 開発環境), サイボウズ 4年8ヶ月 and Backlog 3年6ヶ月 (旅行予約 + 演題) came from the user directly — neither is in the resume. Redmine is 1年4ヶ月 (2016/5 導入〜2017/8 退社), not the 導入3ヶ月 the resume's project entry implies. Do not reintroduce year figures that cannot be traced to a project period.
+3. 業務経験 — professional background from ~9 years of web development at two companies (1st: Classic ASP, 2nd: C#／ASP.NET MVC ~4年8ヶ月). Below the panels: 実務エピソード4件 (課題 / 判断 / 結果). Three panels aligned with the resume: 業種知識 (公営競技サイト（自治体施行）/旅行予約/コンベンション/コーポレート・社内システム), 経験フェーズ (要件定義〜運用改善), 環境・ミドルウェア (Windows Server/SQL Server/IIS/サイボウズ/Redmine). Lead mentions PL leader experience (max 4 members). Items and labels must match the resume (職務経歴書). 業種知識 was corrected 2026-08-21: the year figures originally came from a doda skill sheet, not the resume — the resume lists the industries without years. Each remaining row must trace to a resume project (公営競技=トランスワード期のボートレース場サイト 4年5ヶ月, 旅行予約=2017/9-2019/9, コンベンション=2019/10-2021/3). 「官公庁」was renamed because the actual work is 公営競技場のサイト・管理画面 and the old label implied 中央省庁/自治体基幹系. ECサイト was dropped — no project in the resume backs it. コーポレート uses 「複数案件」 instead of a year figure because the resume only says 「複数担当（各案件2〜3ヶ月サイクル）」. 経験フェーズ and 環境 were corrected the same day, same reason: the resume carries a year figure for exactly one row (SQL Server 5年以上) and the rest were doda values. 経験フェーズ is now the sum of the resume's per-project 担当フェーズ (要件定義/基本設計 3年9ヶ月 = 旅行予約2年 + 演題1年半 + 下関3ヶ月; 詳細設計 3年6ヶ月 = 下関 lists no 詳細設計; 実装/テスト 約9年 = both tenures; 運用改善 4年 = トランスワード期の改修案件). 環境: Windows Server/SQL Server/IIS 約9年 (both tenures' 開発環境), サイボウズ 4年8ヶ月 and Backlog 3年6ヶ月 (旅行予約 + 演題) came from the user directly — neither is in the resume. Redmine is 1年4ヶ月 (2016/5 導入〜2017/8 退社), not the 導入3ヶ月 the resume's project entry implies. Do not reintroduce year figures that cannot be traced to a project period.
 4. 技術スタック・資格 — a 資格 panel (取得年月) plus two provenance blocks: 実業務で使用 (前職での経験: C#/ASP.NET MVC/ASP Classic/SQL/JavaScript/jQuery/HTML・CSS/SVN) and 個人開発で習得 (ASP.NET Core/Identity/EF Core/React/Electron/YouTube Data API/OAuth/Chrome Extensions/Git/GitHub Actions/Claude Code/Codex), as tag chips. Note: version control split — SVN was the work tool, Git is personal-dev. Do not merge back into one block — the split shows professional depth vs. self-driven learning.
-5. 実働プロダクト — shipped products: YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker, Kindle Series Sale Tracker, Phycock, Kototsubo. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
-6. エンジニアリングの土台 — DevNext (ASP.NET Core). Not a product card.
+5. 実働プロダクト — shipped products, in this card order: Phycock, Kototsubo, YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker, Kindle Series Sale Tracker. Each card uses 課題 / 役割 / 使用技術 / 成果 + links.
+6. 開発ベースの再構築 (`#foundation`) — DevNext (ASP.NET Core). Not a product card. Reached from the 開発標準 episode link.
 7. 開発の進め方 — the AI harness (cross-agent-harness), handoff contracts, review gate, skill化. This is where AI usage lives.
-8. Writing — six curated articles + links to full Zenn/Qiita/note.
+8. これから取り組みたいこと (`#interests`).
+9. Writing — six curated articles + links to full Zenn/Qiita/note.
 
-Nav anchors: `#about`, `#experience`, `#projects`, `#approach`, `#writing` — keep in sync with section ids.
+Nav anchors: `#about`, `#experience`, `#projects`, `#approach`, `#interests`, `#writing` — keep in sync with section ids. `#foundation` has no nav entry by design.
 
 Chrome extensions are shipped products in 実働プロダクト. Their Chrome Web Store link and source repo are both linked. Install counts are intentionally omitted (they undersell). No product screenshots (they leak personal data: subscriptions, wishlist items).
 
@@ -43,7 +44,7 @@ Do not add unpublished DevNext-based app details until the user confirms they ar
 
 - Read `git status` before editing.
 - Keep changes scoped to `index.html`, `assets/styles.css`, `README.md`, or this handoff unless the user asks otherwise.
-- Follow the seven-section model in Current Design Line. Do not collapse it back into uniform 5-field cards.
+- Follow the section model in Current Design Line. Do not collapse it back into uniform 5-field cards.
 - Keep AI usage confined to the 開発の進め方 section; do not promote it to a product.
 - Treat Chrome Web Store links as external proof; source repositories may be linked alongside them.
 - Use the handle `harness` only; never add a real name or contact details.
