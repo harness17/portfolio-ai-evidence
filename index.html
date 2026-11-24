@@ -317,7 +317,7 @@
             <dl class="evidence-list">
               <div>
                 <dt>課題</dt>
-                <dd>蔵書や購入メディアを一元管理し、そこから集めた言葉を体系的に記録したい。</dd>
+                <dd>本・ゲーム・映像作品・音楽CDと、媒体ごとに散らばる所蔵品を一か所で管理し、作品から集めた言葉もあわせて記録したい。</dd>
               </div>
               <div>
                 <dt>役割</dt>
@@ -325,15 +325,15 @@
               </div>
               <div>
                 <dt>使用技術</dt>
-                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / 国立国会図書館API / openBD / 楽天ブックスAPI</dd>
+                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / Azure App Service / Azure SQL Database / 国立国会図書館サーチ / openBD / 楽天ブックスAPI / メディア芸術データベース（SPARQL） / IGDB API / xUnit</dd>
               </div>
               <div>
                 <dt>判断</dt>
-                <dd>書誌データは典拠性を優先して国立国会図書館を主に置き、openBD・楽天は補完に回す構成にした。同一ISBNで書誌が割れる場合は利用者が候補から選べるようにした。</dd>
+                <dd>媒体ごとに信頼できるデータ源が違うため、取得元を使い分けた。本は典拠性を優先して国立国会図書館を主にし、書誌が割れる場合は候補から選べるようにした。国内の旧作ゲームはメディア芸術データベース、映像作品と音楽CDは楽天ブックスAPIから引く。</dd>
               </div>
               <div>
                 <dt>成果</dt>
-                <dd>GitHub公開。ISBN単体・一括登録、NDL書誌候補選択、Kindleインポート、言葉収集に対応。</dd>
+                <dd>Azure公開・GitHub公開。本はISBN一括登録とKindleインポート、ゲームはJAN一括登録・国内ゲーム検索・Steamインポート、映像作品と音楽CDはJAN一括登録に対応。所有状態（貸出中・売却済み・欲しいものなど）の管理、言葉の記録、変更履歴の保存まで実装。</dd>
               </div>
             </dl>
             <div class="project-links">
