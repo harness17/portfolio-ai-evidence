@@ -386,11 +386,11 @@
               </div>
               <div>
                 <dt>使用技術</dt>
-                <dd>Electron / React / Node.js / YouTube Data API v3</dd>
+                <dd>Electron / React / Node.js / SQLite（better-sqlite3） / YouTube Data API v3 / OAuth 2.0</dd>
               </div>
               <div>
                 <dt>判断</dt>
-                <dd>1日1万ユニットのAPIクォータ制約に対し、更新頻度の高い取得をRSS併用へ切り替えて消費を削減。自動更新と手動更新で取得内容と頻度を分離した。</dd>
+                <dd>1日1万ユニットのAPIクォータ制約に対し、新着の取得はクォータを消費しないRSSを主経路にし、RSSが失敗したときだけAPIへ切り替える構成にした。RSSの障害でAPI消費が膨らんだことがあったため、切り替えにはチャンネル単位のクールダウンと1回の更新あたりの上限を設けた。通常時の消費は1日200ユニット程度に収まっている。</dd>
               </div>
               <div>
                 <dt>成果</dt>
@@ -424,7 +424,7 @@
               </div>
               <div>
                 <dt>判断</dt>
-                <dd>利用者にAPIキーを用意させない方針を要件に置き、DOM操作とMutationObserverだけで完結させた。</dd>
+                <dd>利用者にAPIキーを用意させない方針を要件に置き、ページのDOMだけで完結させた。YouTubeは再描画のたびに行の順序を戻すため、DOMは動かさずCSSのorderで表示順を固定。MutationObserverはプレイリストの行構造の変化だけを監視し、サムネイルの読み込みなどで並び替えが繰り返し走らないようにした。</dd>
               </div>
               <div>
                 <dt>成果</dt>
@@ -489,11 +489,11 @@
               </div>
               <div>
                 <dt>使用技術</dt>
-                <dd>Chrome Extensions (MV3) / JavaScript / Amazon DOM解析 / LocalStorage</dd>
+                <dd>Chrome Extensions (MV3) / JavaScript / Amazon DOM解析 / chrome.storage / Side Panel API</dd>
               </div>
               <div>
                 <dt>判断</dt>
-                <dd>判別不能を「既存値の保持」と「連続失敗」に分け、一時的な取得失敗で確定済みの情報を失わない設計にした。</dd>
+                <dd>続刊・セールの照会結果が判別できないときは前回の結果を残し、3シリーズ続けて判別できなければその回の実行全体を失敗として次回の再試行に回す。一時的な取得失敗で、確定済みの情報を失わないようにした。</dd>
               </div>
               <div>
                 <dt>成果</dt>
