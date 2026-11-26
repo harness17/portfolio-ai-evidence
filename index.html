@@ -65,15 +65,15 @@
         </p>
         <div class="strengths">
           <div class="panel strength">
-            <h3>作って公開し切る</h3>
+            <h3>要件から運用まで一貫して担う</h3>
             <p>
-              YouTomはv1.24.1まで継続リリース中、GitHub累計300DL超。ブラウザ拡張3本もChrome・Firefoxの両ストアで公開済み。試作で終わらせず、実際に使える形まで持っていきます。
+              前職では、要件定義・DB設計・実装・テストから公開後の改修まで一貫して担当。実現が難しい要求には代案を出して顧客と合意し、プログラマリーダーとして最大4名のチームもまとめました。
             </p>
           </div>
           <div class="panel strength">
-            <h3>書いて言語化する</h3>
+            <h3>作って公開し、書いて残す</h3>
             <p>
-              Zennに38本、Qiitaに57本の技術記事を公開。直面した課題と解決の判断を、あとから再現できる手順として残しています。
+              YouTomはv1.24.1まで継続リリース中で、GitHub累計300DL超。ブラウザ拡張3本はChrome・Firefoxの両ストアで公開済み。直面した課題と判断は、Zennに38本、Qiitaに57本の技術記事として残しています。
             </p>
           </div>
           <div class="panel strength">
@@ -285,40 +285,6 @@
           <article class="project">
             <div class="project-header">
               <p class="project-kicker">Web app · ASP.NET Core</p>
-              <h3>Phycock</h3>
-            </div>
-            <dl class="evidence-list">
-              <div>
-                <dt>課題</dt>
-                <dd>日々の体調変化を記録・可視化する個人用Webアプリが欲しかった。</dd>
-              </div>
-              <div>
-                <dt>役割</dt>
-                <dd>設計・実装・テストまで一人で担当。</dd>
-              </div>
-              <div>
-                <dt>使用技術</dt>
-                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / Chart.js / Playwright</dd>
-              </div>
-              <div>
-                <dt>判断</dt>
-                <dd>Azure環境ではChromium配置に制約があるため、PDF出力をブラウザ印刷経路へ分岐させ、環境ごとに出力手段を切り替える構成にした。</dd>
-              </div>
-              <div>
-                <dt>成果</dt>
-                <dd>GitHub公開。日次体調記録・グラフ可視化・PDFエクスポートに対応。</dd>
-              </div>
-            </dl>
-            <div class="project-links">
-              <a href="https://phycock-e8a6gwh3h3h8hgh7.japanwest-01.azurewebsites.net/">Azureサイト</a>
-              <a href="https://github.com/harness17/phycock">ログイン情報などはGitHub参照</a>
-              <a href="https://zenn.dev/harness/articles/phycock-playwright-pdf-export">Zenn: PDF出力</a>
-            </div>
-          </article>
-
-          <article class="project">
-            <div class="project-header">
-              <p class="project-kicker">Web app · ASP.NET Core</p>
               <h3>Kototsubo</h3>
             </div>
             <dl class="evidence-list">
@@ -346,6 +312,40 @@
             <div class="project-links">
               <a href="https://kototsubo-gfbvfcg3efhyfucx.japanwest-01.azurewebsites.net/">Azureサイト</a>
               <a href="https://github.com/harness17/kototsubo">ログイン情報などはGitHub参照</a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-header">
+              <p class="project-kicker">Web app · ASP.NET Core</p>
+              <h3>Phycock</h3>
+            </div>
+            <dl class="evidence-list">
+              <div>
+                <dt>課題</dt>
+                <dd>日々の体調変化を記録・可視化する個人用Webアプリが欲しかった。</dd>
+              </div>
+              <div>
+                <dt>役割</dt>
+                <dd>設計・実装・テスト・運用まで一人で担当。</dd>
+              </div>
+              <div>
+                <dt>使用技術</dt>
+                <dd>ASP.NET Core 10 MVC / Entity Framework Core / Identity / Chart.js / Playwright / Azure App Service / Azure SQL Database</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>Azure環境ではChromium配置に制約があるため、PDF出力をブラウザ印刷経路へ分岐させ、環境ごとに出力手段を切り替える構成にした。公開後、Azure SQL の自動休止からの復帰時にサイトが起動に失敗する事象が出たため、Kudu のイベントログからエラーコード（40613）で原因を特定し、EF Core の接続再試行設定で解消した。</dd>
+              </div>
+              <div>
+                <dt>成果</dt>
+                <dd>Azure公開・GitHub公開。日次体調記録・グラフ可視化・PDFエクスポートに対応。</dd>
+              </div>
+            </dl>
+            <div class="project-links">
+              <a href="https://phycock-e8a6gwh3h3h8hgh7.japanwest-01.azurewebsites.net/">Azureサイト</a>
+              <a href="https://github.com/harness17/phycock">ログイン情報などはGitHub参照</a>
+              <a href="https://zenn.dev/harness/articles/phycock-playwright-pdf-export">Zenn: PDF出力</a>
             </div>
           </article>
 
@@ -636,7 +636,7 @@
     </main>
 
     <footer class="footer">
-      <p>Last updated: 2026-11-24</p>
+      <p>Last updated: 2026-11-26</p>
       <p>公開可能な技術活動のみを掲載しています。氏名・連絡先などの個人情報はこのページでは扱いません。</p>
     </footer>
   </body>
