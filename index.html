@@ -455,11 +455,15 @@
               </div>
               <div>
                 <dt>使用技術</dt>
-                <dd>Chrome Extensions (MV3) / JavaScript / DOM</dd>
+                <dd>Chrome Extensions (MV3) / JavaScript / DOM / MutationObserver</dd>
+              </div>
+              <div>
+                <dt>判断</dt>
+                <dd>ほしい物リストはスクロールで後から読み込まれるため、自動スクロールで全件を読み込んでから判定する方式にした。待機は固定時間ではなく MutationObserver で商品の追加を検知して進め、終了はAmazon側の終端マーカーで判定する。スクロール回数で止めていた頃は長いリストで368件中290件しか対象にならなかったため、終了条件をページの状態に切り替えて取りこぼしを防いだ。</dd>
               </div>
               <div>
                 <dt>成果</dt>
-                <dd>Chrome Web Store · Firefox Add-ons 公開。日本語・英語の両UIに対応。</dd>
+                <dd>Chrome Web Store · Firefox Add-ons 公開。複数のリストを横断してセールを確認する機能も実装。日本語・英語の両UIに対応。</dd>
               </div>
             </dl>
             <div class="project-links">
