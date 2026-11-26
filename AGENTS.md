@@ -14,7 +14,7 @@ Before editing, read `CLAUDE_CODE_HANDOFF.md`.
 - Article counts: write Zenn and Qiita separately (Qiita includes reworked reposts of Zenn articles). Never sum them into one figure.
 - DevNext wording: Claude Code was used to move the common base to the ASP.NET Core 10 structure, to see how it changes from .NET Framework 4.6.1. Do not say 「作り直した」 or 「一から再構築」. Never name or link the old template (DevNet).
 - Lead with technical skills and shipped deliverables. AI-assisted workflow is one section ("開発の進め方 / How I work"), not a product.
-- Section model, in this order: Hero → 強み → 業務経験（年数表 + 実務エピソード5件）→ 技術スタック・資格 → 実働プロダクト → 開発ベースの再構築 → 開発の進め方 → これから取り組みたいこと → Writing.
+- Section model, in this order: Hero → 強み → 業務経験（年数表 + 実務エピソード6件）→ 技術スタック・資格 → 実働プロダクト → 開発ベースの再構築 → 開発の進め方 → これから取り組みたいこと → Writing.
 - 実務エピソード uses the same 課題 / 判断 / 結果 card shape as the product cards. Never invent metrics or episodes — the source is the user's own account, and no numbers were available.
 - 実働プロダクト = shipped products, in this card order: Kototsubo, Phycock, YouTom, YouTube Playlist Date Sorter, Amazon Wishlist Sale Picker, Kindle Series Sale Tracker. Each product card uses 課題 / 役割 / 使用技術 / 成果 + links.
 - DevNext belongs in 開発ベースの再構築 (not a product card). The AI harness (cross-agent-harness) belongs in 開発の進め方. Keep the link from the 開発標準 episode to `#foundation` — it is what connects the previous job to the current personal work.
