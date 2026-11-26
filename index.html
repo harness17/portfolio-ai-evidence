@@ -616,7 +616,7 @@
           <div class="panel">
             <h3>検証のしかた</h3>
             <ul>
-              <li>dotnet test / npm test</li>
+              <li>変更の種類ごとに回すテストを決めておき、完了前に必ず実行する（ASP.NET Core は dotnet test、拡張と Electron アプリは npm test）</li>
               <li>Playwrightによる実動確認</li>
               <li>外部サイトのDOMに依存する拡張は、実DOMをフィクスチャに保存してjsdomで回帰テスト</li>
               <li>DevNextは、GitHub Actionsのビルドとテストの通過とPRを反映の条件にしている</li>
