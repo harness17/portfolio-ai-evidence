@@ -13,6 +13,7 @@ Before editing, read `CLAUDE_CODE_HANDOFF.md`.
 - Facts must match the private job-search records (resume). Web development is ~9 years, but C#／ASP.NET MVC is only ~4年8ヶ月 (the 2nd company); the 1st company was all Classic ASP. Never write that C# was used for 9 years. Never call the previous employer an 「ITコンサルティング企業」.
 - Article counts: write Zenn and Qiita separately (Qiita includes reworked reposts of Zenn articles). Never sum them into one figure.
 - DevNext wording: Claude Code was used to move the common base to the ASP.NET Core 10 structure, to see how it changes from .NET Framework 4.6.1. Do not say 「作り直した」 or 「一から再構築」. Never name or link the old template (DevNet).
+- Personal-dev tech is labeled 「個人開発で使用」 (built with Claude Code / Codex; design decisions and review are the user's). Never write 「習得」 for it — implementation is mostly AI-driven.
 - Lead with technical skills and shipped deliverables. AI-assisted workflow is one section ("開発の進め方 / How I work"), not a product.
 - Section model, in this order: Hero → 強み → 業務経験（年数表 + 実務エピソード6件）→ 技術スタック・資格 → 実働プロダクト → 開発ベースの再構築 → 開発の進め方 → これから取り組みたいこと → Writing.
 - 実務エピソード uses the same 課題 / 判断 / 結果 card shape as the product cards. Never invent metrics or episodes — the source is the user's own account, and no numbers were available.
